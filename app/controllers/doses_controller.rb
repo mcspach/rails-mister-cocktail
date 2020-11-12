@@ -14,6 +14,7 @@ class DosesController < ApplicationController
 
   # GET /doses/new
   def new
+    @cocktail = Cocktail.find(params[:cocktail_id])
     @dose = Dose.new
   end
 

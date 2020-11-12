@@ -4,6 +4,15 @@
   <strong>Name:</strong>
   <%= @cocktail.name %>
 </p>
+<p>
+  <strong>Ingredients:</strong>
+</p>
+
+  <% @cocktail.ingredients.each do |i| %>
+  <p><%= "#{i.name}: #{i.dose}" %></p>
+  <% end %>
+
+
 
 <%= link_to 'Edit', edit_cocktail_path(@cocktail) %> |
 <%= link_to 'Back', cocktails_path %>
