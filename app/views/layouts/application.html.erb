@@ -13,10 +13,10 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <h1>Welcome to Mister Cocktail</h1>
-    <%# <%= link_to "Cocktails List", cocktails_path %>
-    <%# <%= link_to "Add a Dose to a Drink", _path %>
+  <body>  
+
+    <%= render 'shared/navbar' %>
+    
     <%= yield %>
   </body>
 </html>

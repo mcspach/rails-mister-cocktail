@@ -8,11 +8,16 @@
   <strong>Ingredients:</strong>
 </p>
 
-  <% @cocktail.ingredients.each do |i| %>
-  <p><%= "#{i.name}: #{i.dose}" %></p>
+  <% @cocktail.doses.each do |i| %>
+  <p><%= i.ingredient.name %>: <%= i.description %></p>
   <% end %>
+  
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
+    <%= f.input :description %>
+    <%= f.association :ingredient %>
 
-
-<%= link_to 'Edit', edit_cocktail_path(@cocktail) %> |
-<%= link_to 'Back', cocktails_path %>
+    <%= f.button :submit %> 
+<% end %>

@@ -1,0 +1,22 @@
+.my_card {
+  width: 220px;
+  height: 120px;
+  background-color: white;
+  opacity: 90%;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.my_card .name {
+  color: black;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.my_card href {
+  color: black;
+}
