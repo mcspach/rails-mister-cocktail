@@ -28,6 +28,7 @@ h1 {
 }
 
 .btn, link {
+  font-size: 100%;
   background-color: grey;
   border: 1px solid $yellow;
   border-radius: 12px;
@@ -53,3 +54,11 @@ a:hover {
   text-decoration: none;
   transform: scale(1.03);
 }
+
+@media screen and (max-width: 900px) {
+  body {
+    background-position: top;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+} 

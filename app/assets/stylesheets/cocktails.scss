@@ -8,7 +8,7 @@ $yellow: #ffe202;
   color: black;
   border: 2px solid $yellow;
   background-color: white;
-  opacity: 98%;
+  opacity: 90%;
   border-radius: 2px;
   margin: 5% auto;
   padding: 5%;
@@ -16,6 +16,10 @@ $yellow: #ffe202;
 
 .tail-list {
   justify-content: center;
+}
+
+.name {
+  white-space: no-wrap;
 }
 
 @media screen and (max-width: 600px) {

@@ -2,19 +2,17 @@
 
 <h1>Cocktails</h1>
 
-  <div class="container">
+  <div class="row p-4">
     <% @cocktails.each do |cocktail| %>
-    <div class="my_card">
-      <p class="name"><%= cocktail.name %></p>
-      <div class="flex align-center">
-        
-        <div class="btn btn-outline-success"><%= link_to 'View Recipe', cocktail %></div>
-  
-      
+    <div class="my_card col-6 col-md-4">
+      <div class="inner">
+        <p class="name text-center"><%= cocktail.name %></p>
+    
+        <div class="btn btn-outline-success"><%= link_to 'View', cocktail %></div>
       </div>
     </div>
     <% end %>
-    </div>
+  </div>
 
 <br>
 

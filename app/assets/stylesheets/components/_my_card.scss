@@ -1,20 +1,33 @@
 .my_card {
-  width: 200px;
-  height: fit-content;
-  background-color: white;
-  opacity: 98%;
-  border: 1px solid $yellow;
-  border-radius: 2px;
+  height: 150px;
+  // background-color: white;
+  // opacity: 95%;
+  // border: 1px solid $yellow;
+  // border-radius: 2px;
   display: flex;
   flex-direction: column;
-  padding: 10px;
   align-items: center;
   justify-content: space-evenly;
+  padding: 4px;
+}
+
+.inner {
+  border: 1px solid $yellow;
+  border-radius: 2px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+  opacity: 90%;
+  height: 99%;
+  width: 97%;
 }
 
 .my_card .name {
   color: black;
   text-decoration: underline;
+  font-weight: bold;
   margin-top: 10px;
 }
 
