@@ -6,13 +6,12 @@
     <% @cocktails.each do |cocktail| %>
     <div class="my_card">
       <p class="name"><%= cocktail.name %></p>
-      <ul class="flex">
+      <div class="flex align-center">
         
-    
-        <li class="btn btn-outline-success my-2 my-sm-0 badge-pill"><%= link_to 'View Recipe', cocktail %></li>
-        <li class="btn btn-outline-success my-2 my-sm-0 badge-pill"><%= link_to 'Delete', cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        <div class="btn btn-outline-success"><%= link_to 'View Recipe', cocktail %></div>
+  
       
-      </ul>
+      </div>
     </div>
     <% end %>
     </div>

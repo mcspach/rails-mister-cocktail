@@ -1,8 +1,9 @@
 .my_card {
-  width: 220px;
-  height: 120px;
+  width: 200px;
+  height: fit-content;
   background-color: white;
-  opacity: 90%;
+  opacity: 98%;
+  border: 1px solid $yellow;
   border-radius: 2px;
   display: flex;
   flex-direction: column;
@@ -17,6 +18,6 @@
   margin-top: 10px;
 }
 
-.my_card href {
-  color: black;
-}
+// .my_card href {
+//   color: black;
+// }
